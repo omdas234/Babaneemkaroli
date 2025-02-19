@@ -1,0 +1,353 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Baba Neem Karoli</title>
+  <style>
+    /* Basic Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      background-color:#2C2C2C ;
+      text-align: center;
+      
+    }
+    
+    /* Header Section */
+    .header {
+      position: relative;
+      width: 100%;
+      height: 300px;
+      background: url('baba-image.jpg') no-repeat center/cover;
+      box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.7);
+    }
+    .header::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      z-index: 1;
+    }
+    
+    /* Ram Naam Animation */
+    .ram-banner {
+      position: absolute;
+      top: 10px;
+      left: 0;
+      width: 100%;
+      color: yellow;
+      font-size: 24px;
+      font-weight: bold;
+      overflow: hidden;
+      white-space: nowrap;
+      z-index: 2;
+    }
+    .ram-banner span {
+      display: inline-block;
+      animation: ramScroll 10s linear infinite;
+    }
+    @keyframes ramScroll {
+      from { transform: translateX(100%); }
+      to { transform: translateX(-100%); }
+    }
+    
+    /* Light Poles with Bulbs */
+
+    .bulb-container {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      display: flex;
+      justify-content: space-between;
+      width: 90%;
+      z-index: 2;
+    }
+    .pole {
+      width: 10px;
+      height: 100px;
+      background: brown;
+      position: relative;
+    }
+    .bulb {
+      width: 40px;
+      height: 40px;
+      background: yellow;
+      border-radius: 50%;
+      position: absolute;
+      top: -10px;
+      left: 50%;
+      transform: translateX(-50%);
+      box-shadow: 0px 0px 10px yellow;
+      animation: glow 0.2s infinite alternate;
+    }
+    @keyframes glow {
+      0% { opacity: 0.5; }
+      100% { opacity: 1; }
+    }
+    
+    /* Introduction Section */
+    .intro {
+      padding: 20px;
+      font-size: 18px;
+    }
+    
+    
+    _________________________
+    
+    /* Bhakti Tool Section */
+    .bhakti-tool {
+      padding: 20px;
+      border: 2px solid gold;
+      margin: 20px auto;
+      max-width: 400px;
+      border-radius: 10px;
+      background: rgba(255, 223, 0, 0.2);
+      box-shadow: 0px 5px 15px rgba(255, 223, 0, 0.5);
+    }
+    
+    /* Books & Links Section */
+    .resources {
+      padding: 20px;
+    }
+    .resources a {
+      display: block;
+      color: blue;
+      text-decoration: none;
+      margin: 5px;
+    }
+
+.container {
+      text-align: center;
+    }
+
+    /* Box Styling */
+    #box {
+      width: 300px;
+      height: 300px;
+      border: 3px solid yellow;
+      position: relative;
+      overflow: hidden;
+      background-color: rgba(0, 0, 255, 0.7); /* Transparent Blue */
+      display: flex;
+      flex-wrap: wrap;
+      align-content: flex-start;
+      border-radius: 10px;
+      box-shadow: 0px 5px 15px rgba(255, 255, 0, 0.8); /* Yellow glowing effect */
+      transform: perspective(1000px) rotateX(5deg);
+      margin-left:30px;
+      
+    }
+
+    /* Ram Name Styling */
+    .ram-name {
+      font-size: 18px;
+      margin: 3px;
+      font-weight: bold;
+      color: yellow;
+      text-shadow: 0px 0px 10px rgba(255, 255, 0, 1); /* Glowing Effect */
+      animation: fall 0.8s ease-in forwards; 
+    }
+
+    @keyframes fall {
+      from {
+        transform: translateY(-20px);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    /* Button Styling */
+    #addButton {
+      margin-top: 20px;
+      padding: 12px 24px;
+      font-size: 18px;
+      background-color: #FFD700; /* Gold Button */
+      color: #000;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+      box-shadow: 0px 4px 10px rgba(255, 255, 0, 0.8); /* Glowing effect */
+      transition: all 0.3s ease;
+    }
+
+    #addButton:hover {
+      background-color: #FFC300;
+      box-shadow: 0px 6px 15px rgba(255, 255, 0, 1);
+    }
+
+    #addButton:active {
+      box-shadow: none;
+      transform: translateY(2px);
+    }
+
+    h1 {
+      font-size: 24px;
+      text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.8);
+    }
+
+ 
+        #translateBtn {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: #FFD700;
+            border: none;
+            border-radius: 5px;
+        }
+
+
+
+
+
+  </style>
+</head>
+<body>
+  <div class="header">
+    <div class="ram-banner"><span>राम राम राम राम राम राम राम राम राम</span></div>
+    <div class="bulb-container">
+    <div class="pole"><div class="bulb"> </div></div>
+    
+    <h1 style="color:yellow;" >JAY BABA NEEMKAROLI</h1>
+    
+    <div class="pole"><div class="bulb"></div></div>
+    </div>
+  </div>
+  
+  <div class="intro">
+    <p style="color:white;" >Baba Neem Karoli's Lessons</p>
+  </div>
+  
+  
+  
+
+____________________________________
+   
+  <img style="height:350px; width:270px; border:3px solid yellow;" src="https://i.postimg.cc/KvwhBmzw/resized-neem-karoli-baba.jpg" alt="" />
+   
+   <img style="border:5px solid yellow;" src="https://i.postimg.cc/PfVK8NLd/labyrinth-3009-256.gif" alt="" />
+   
+    <p id="translatable" style="color:white;">बाबा नीम करोली एक महान संत थे जो प्रभु हनुमान जी के उपासक थे। कई लोग बाबा को हनुमान जी का अवतार मानते थे। बाबा अपने कृपा से भक्तों की बड़ी दुख परेशानियों को दूर करते थे और उनका मार्गदर्शन करके उन्हें सही राह दिखाते थे। ऐसे कई छोटे और बड़े लोगों के जीवन को बाबा ने संवार दिया। आपको जानकर हैरानी होगी कि बाबा हर समय अपने भक्तों को ईश्वर की कृपा के लिए कोई पूजा-पाठ या कठिन साधना करने को नहीं कहते थे। वे सिर्फ भगवान का चिंतन और अच्छे कर्मों एवं सरलता को ज्यादा महत्ता देते थे। बाबा ने कई आश्रम बनाए, उनमें से सबसे प्रसिद्ध आश्रम कैंची धाम है। अगर आपके जीवन में बहुत परेशानी है तो एक बार बाबा के शरण में जाकर देखें। मैं ऐसा नहीं कह रहा कि इससे आपकी सारी परेशानियाँ तुरंत दूर हो जाएंगी और आपको बहुत सुख मिलेगा, यह तो बाबा के ऊपर है, उनकी कृपा के ऊपर है। इतना ज़रूर होगा कि आपका जीवन एक सही राह पर निकल जाएगा। बाबा अपने भक्तों को सही मार्ग दिखाकर उनके जीवन की गाड़ी को परेशानियों से बाहर निकालते हैं।</p>
+    <button id="translateBtn">Translate</button>
+    
+    
+     
+<h2 style="color:white;" >Put Ram's name in the box, fill the box, and receive God's blessings.</h2>
+    <div id="tool-placeholder"></div>
+  </div>
+  
+<div class="container">
+    <!-- Heading -->
+    <h1 style="color:yellow;" >Put "राम" name on box</h1>
+    <!-- Box where "राम" names will appear -->
+    <div id="box"></div>
+    <!-- Button to add "राम" -->
+    <button id="addButton">Put</button>
+  </div>
+
+  <div class="resources">
+    
+    
+    <h2 style="color: #FFD700;">Books on Baba Neem Karoli</h2>
+    <table style="width: 80%; margin: auto; border-collapse: collapse; background-color: #444; color: white; border: 1px solid #FFD700;">
+        <tr style="background-color: #FFD700; color: black;">
+            <th style="padding: 10px; border: 1px solid #FFD700;">Book Name</th>
+            <th style="padding: 10px; border: 1px solid #FFD700;">Author</th>
+            <th style="padding: 10px; border: 1px solid #FFD700;">Year</th>
+        </tr>
+        <tr>
+            <td style="padding: 10px; border: 1px solid #FFD700;">Miracle of Love</td>
+            <td style="padding: 10px; border: 1px solid #FFD700;">Ram Dass</td>
+            <td style="padding: 10px; border: 1px solid #FFD700;">1979</td>
+        </tr>
+        <tr>
+            <td style="padding: 10px; border: 1px solid #FFD700;">By His Grace</td>
+            <td style="padding: 10px; border: 1px solid #FFD700;">Krishna Das</td>
+            <td style="padding: 10px; border: 1px solid #FFD700;">2001</td>
+        </tr>
+        <tr>
+            <td style="padding: 10px; border: 1px solid #FFD700;">Love Everyone</td>
+            <td style="padding: 10px; border: 1px solid #FFD700;">Parvati Markus</td>
+            <td style="padding: 10px; border: 1px solid #FFD700;">2015</td>
+        </tr>
+        <tr>
+            <td style="padding: 10px; border: 1px solid #FFD700;">Neem Karoli Baba: The Divine Reality</td>
+            <td style="padding: 10px; border: 1px solid #FFD700;">Jaya Prasada</td>
+            <td style="padding: 10px; border: 1px solid #FFD700;">2018</td>
+        </tr>
+        <tr>
+            <td style="padding: 10px; border: 1px solid #FFD700;">The Near and the Dear</td>
+            <td style="padding: 10px; border: 1px solid #FFD700;">Dada Mukherjee</td>
+            <td style="padding: 10px; border: 1px solid #FFD700;">2006</td>
+        </tr>
+    </table>
+
+    
+  </div>
+
+  <script>
+   
+   
+    
+        let isHindi = true;
+        const hindiText = "बाबा नीम करोली एक महान संत थे जो प्रभु हनुमान जी के उपासक थे। कई लोग बाबा को हनुमान जी का अवतार मानते थे। बाबा अपने कृपा से भक्तों की बड़ी दुख परेशानियों को दूर करते थे और उनका मार्गदर्शन करके उन्हें सही राह दिखाते थे। ऐसे कई छोटे और बड़े लोगों के जीवन को बाबा ने संवार दिया। आपको जानकर हैरानी होगी कि बाबा हर समय अपने भक्तों को ईश्वर की कृपा के लिए कोई पूजा-पाठ या कठिन साधना करने को नहीं कहते थे। वे सिर्फ भगवान का चिंतन और अच्छे कर्मों एवं सरलता को ज्यादा महत्ता देते थे। बाबा ने कई आश्रम बनाए, उनमें से सबसे प्रसिद्ध आश्रम कैंची धाम है। अगर आपके जीवन में बहुत परेशानी है तो एक बार बाबा के शरण में जाकर देखें। मैं ऐसा नहीं कह रहा कि इससे आपकी सारी परेशानियाँ तुरंत दूर हो जाएंगी और आपको बहुत सुख मिलेगा, यह तो बाबा के ऊपर है, उनकी कृपा के ऊपर है। इतना ज़रूर होगा कि आपका जीवन एक सही राह पर निकल जाएगा। बाबा अपने भक्तों को सही मार्ग दिखाकर उनके जीवन को समस्याओं से बाहर निकालते हैं।";
+        const englishText = "Baba Neem Karoli was a great saint who was a devotee of Lord Hanuman. Many people considered Baba to be an incarnation of Hanuman Ji. With his grace, Baba alleviated the great sufferings of his devotees and guided them on the right path. Baba transformed the lives of many, both small and great. You will be surprised to know that Baba never asked his devotees to perform rituals or undergo difficult penance for God's blessings. He only emphasized meditating on God, performing good deeds, and living a simple life. Baba established many ashrams, the most famous being Kainchi Dham. If you are facing many difficulties in life, try seeking Baba’s refuge once. I am not saying that all your troubles will immediately disappear and you will find great happiness; that depends on Baba’s grace. However, one thing is certain: your life will take the right direction. Baba guides his devotees on the correct path and helps them overcome the troubles in their lives.";
+
+        document.getElementById("translateBtn").addEventListener("click", function() {
+            let p = document.getElementById("translatable");
+            if (isHindi) {
+                p.textContent = englishText;
+                isHindi = false;
+            } else {
+                p.textContent = hindiText;
+                isHindi = true;
+            }
+        });
+   
+   
+   
+    // Tool Integration (Placeholder for User's Tool)
+    document.getElementById("tool-placeholder").innerHTML = "[Your Tool Will Be Added Here]";
+
+
+// JavaScript Code
+    const box = document.getElementById("box");
+    const addButton = document.getElementById("addButton");
+    const ramImageUrl = "https://i.postimg.cc/jjJDZC7J/ram-darbar-deities-kxkjmn9sp8k33kza.jpg"; 
+
+    addButton.addEventListener("click", () => {
+      // Create a new "राम" text element
+      const ramName = document.createElement("div");
+      ramName.classList.add("ram-name");
+      ramName.textContent = "राम";
+      box.appendChild(ramName);
+
+      // Check if the box is full
+      if (box.scrollHeight > box.clientHeight) {
+        // Box is full, replace with Ram image
+        box.innerHTML = `<img src="${ramImageUrl}" alt="Ram" style="width: 100%; height: 100%; object-fit: cover; border-radius: 10px;">`;
+        
+        // After 10 seconds, reset to the original box
+        setTimeout(() => {
+          box.innerHTML = ""; // Clear the box
+        }, 10000);
+      }
+    });
+
+  </script>
+</body>
+</html>
